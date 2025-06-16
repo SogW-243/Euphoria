@@ -1,0 +1,19 @@
+@import 'parts/variable';
+@import 'parts/reset';
+@import 'parts/fonts';
+@import 'parts/base';
+@import 'parts/mixin';
+
+// import components
+@import 'components/header';
+@import 'components/btn';
+@import 'components/icon';
+@import 'components/footer';
+
+// import home
+@import 'home/header';
+@import 'home/banner';
+@import 'home/description';
+@import 'home/similar';
+@import 'home/carts';
+@import 'home/footer';

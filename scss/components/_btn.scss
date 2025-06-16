@@ -1,0 +1,155 @@
+// Button Component
+.btn-button{
+    width: 156px;
+    height: 54px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    border-radius: 8px;
+    padding: 16px 20px;
+    gap: 12px;
+}
+.btn-heart{
+    width: 44;
+    height: 44;
+    top: 20px;
+    left: 20px;
+    border-radius: 8px;
+    gap: 12px;
+    padding: 12px;
+
+}
+
+// primary-button 
+    .btn-primary {
+        background-color: $purpleColor;
+        color: $background;
+        border: 1px solid $purpleColor;
+        @extend .btn-button; 
+    }
+    .btn-primary:hover {
+        background-color: #6620C1;
+    }
+    .btn-primary:focus {
+        background-color: #6620C1;
+    }
+    .btn-primary:disabled{
+        background-color: #EAEAEA;
+    }
+// icon-heart 
+    .icon-primary{
+        @extend .btn-heart;
+        background-color: $purpleColor;
+        color: $background;
+        border: 1px solid $purpleColor;
+    }
+    .icon-primary:hover {
+        background-color: #6620C1;
+    }
+    .icon-primary:focus {
+        background-color: #6620C1;
+    }
+    .icon-primary:disabled{
+        background-color: #EAEAEA;
+    }
+    
+// Secondary Button
+    .btn-secondary {
+        background-color: $background;
+        color: $purpleColor;
+        border: 1px solid #3C4242;
+        @extend .btn-button;
+    }
+    .btn-secondary:hover {
+        background: #6620C108;
+
+    }
+    .btn-secondary:focus {
+        border: 1px solid #8A33FD;
+    }
+    .btn-secondary:disabled{
+        background-color: #EAEAEA;
+    }
+// icon-secondary
+    .icon-secondary{
+        @extend .btn-heart;
+        background-color: $background;
+        color: $purpleColor;
+        border: 1px solid #3C4242;
+    }
+    .icon-secondary:hover {
+        background: #6620C108;
+
+    }
+    .icon-secondary:focus {
+        border: 1px solid #8A33FD;
+    }
+    .icon-secondary:disabled{
+        background-color: #EAEAEA;
+    }
+// Text Button
+    .btn-text {
+        background-color: $background;
+        color: $purpleColor;
+        @extend .btn-button;
+    }
+    .btn-text:hover {
+        box-shadow: 0px 3px 4px 0px #0000001A;
+
+    }
+    .btn-text:focus {
+       background: #6620C108;
+    }
+    .btn-text:disabled{
+        background-color: #EAEAEA;
+    }
+// icon-text
+    .icon-text{
+        @extend .btn-heart;
+        background-color: $background;
+        color: $purpleColor;
+    }
+    .icon-text:hover {
+        box-shadow: 0px 3px 4px 0px #0000001A;
+
+    }
+    .icon-text:focus {
+       background: #6620C108;
+    }
+    .icon-text:disabled{
+        background-color: #EAEAEA;
+    }
+// Elevated Button
+    .btn-elevated {
+        background-color: $background;
+        color: $purpleColor;
+        box-shadow: 0px 3px 4px 0px #0000001A;
+        @extend .btn-button;
+
+    }
+    .btn-elevated:hover {
+        background: #6620C108;
+    }
+    .btn-elevated:focus {
+        background: #6620C108;
+    }
+    .btn-elevated:disabled{
+        background: #EAEAEA;
+    }
+// icon-elevated
+    .icon-elevated{
+        @extend .btn-heart;
+        background-color: $background;
+        color: $purpleColor;
+        box-shadow: 0px 3px 4px 0px #0000001A;
+    }
+    .icon-elevated:hover {
+        background: #6620C108;
+    }
+    .icon-elevated:focus {
+        background: #6620C108;
+    }
+    .icon-elevated:disabled{
+        background: #EAEAEA;
+    }
+

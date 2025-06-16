@@ -1,0 +1,38 @@
+html{
+    font-size: $fontSize;
+}
+
+body{
+    font-family: $fontFamily;
+    font-family: 1rem;
+    line-height: 1.2;
+    color: $textColor;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1 h2 h3 h4 h5 h6{
+    color: $primaryColor;
+    margin: 10px 0;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+ul,ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__logo{
+    width: 91.16px;
+    height: 45px;
+    margin: 0 auto;
+    display: block;
+    top: 1px;
+}
