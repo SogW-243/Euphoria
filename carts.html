@@ -7,44 +7,91 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/carts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Monsieur+La+Doulaise&family=Oswald:wght@200..700&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header-top">
-        <p>
-            Sign up and get 20% off to your first order. 
-            <p class="sign-up">
-                Sign Up Now
+    <div class="header__promo-bar">
+        <div class="header-top">
+            <p>
+                Sign up and get 20% off to your first order. 
+                <p class="sign-up">
+                    Sign Up Now
+                </p>
             </p>
-        </p>        
+                <i class="fa-solid fa-xmark"></i>        
+        </div>
     </div>
     
     <header class="header">
+            <div class="logo">
+                <img src="images/Logo.png" alt="">
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Combos</a></li>
+                    <li><a href="#">Joggers</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="icon">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+    </header><!-- header -->
+    <div class="content">
+        <div class="header-content">
+            <h3>
+                <span>Home</span>  
+                <i class="fa-solid fa-angle-right"></i> 
+                Cart
+            </h3>
+            <h1>your cart</h1>
+        </div><!-- header-content -->
         <div class="container">
             <div class="row">
-                <div class="col col-2">
-                    <div class="logo">
-                        <img src="images/Logo.png" alt="">
+                <div class="product-list col col-7">
+                    <div class="product-list__one">
+                        <img src="images/product-one.png" alt="">
+                        <div class="product-item__info">
+                            <h4>Gradient Graphic T-shirt</h4> 
+                            <p>Size: <span>Large</span></p> 
+                            <p>Color: <span>White</span></p> <br>
+                            <h3>$145</h3>
+                        </div>
                     </div>
-                </div><!-- col-2 -->
-                <div class="col col-5">
-                    <div class="header-list">
-                        <ul>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Men</a></li>
-                            <li><a href="#">Women</a></li>
-                            <li><a href="#">Combos</a></li>
-                            <li><a href="#">Joggers</a></li>
-                        </ul>
+                    <div class="product-list__two">
+                        <img src="images/product-two.png" alt="">
+                        <div class="product-item__info">
+                            <h4>CHECKERED SHIRT</h4> 
+                            <p>Size: <span>Medium</span></p> 
+                            <p>Color: <span>Red</span></p> <br>
+                            <h3>$180</h3>
+                        </div>
                     </div>
-                </div><!-- col-5 -->
-                <div class="col col-3">
-            
-                </div><!-- col-3 -->
-                <div class="col col-2">
-            
-                </div><!-- col-2 -->
+                    <div class="product-list__three">
+                        <img src="images/product-three.png" alt="">
+                        <div class="product-item__info">
+                            <h4>SKINNY FIT JEANS</h4> 
+                            <p>Size: <span>Large</span></p> 
+                            <p>Color: <span>Blue</span></p> <br>
+                            <h3>$240</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-oder col col-5">
+                    abc
+                </div>
             </div>
-        </div><!-- container -->
-    </header>
+        </div>
+    </div>
 </body>
 </html>
