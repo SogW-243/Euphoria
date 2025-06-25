@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/carts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Monsieur+La+Doulaise&family=Oswald:wght@200..700&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Monsieur+La+Doulaise&family=Oswald:wght@200..700&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nunito-sans" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nunito-sans" rel="stylesheet">
+                                                    
 </head>
 <body>
     <div class="header__promo-bar">
@@ -17,16 +21,20 @@
             <p>
                 Sign up and get 20% off to your first order. 
                 <p class="sign-up">
-                    Sign Up Now
+                   <a href="#">Sign Up Now</a> 
                 </p>
             </p>
+            <a href="#">
                 <i class="fa-solid fa-xmark"></i>        
+            </a>
         </div>
     </div>
     
     <header class="header">
             <div class="logo">
-                <img src="images/Logo.png" alt="">
+                <a href="#">
+                    <img src="images/Logo.png" alt="">
+                </a>
             </div>
             <div class="header-menu">
                 <ul>
@@ -38,19 +46,30 @@
                 </ul>
             </div>
             <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
                 <input type="text" placeholder="Search">
             </div>
             <div class="icon">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-user"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </div>
     </header><!-- header -->
+    <!---------------------------------------------------------------->
     <div class="content">
         <div class="header-content">
             <h3>
-                <span>Home</span>  
+                <a href="#">
+                    <span>Home</span>  
+                </a>
                 <i class="fa-solid fa-angle-right"></i> 
                 Cart
             </h3>
@@ -62,36 +81,142 @@
                     <div class="product-list__one">
                         <img src="images/product-one.png" alt="">
                         <div class="product-item__info">
-                            <h4>Gradient Graphic T-shirt</h4> 
+                            <h3>Gradient Graphic T-shirt</h3> 
                             <p>Size: <span>Large</span></p> 
                             <p>Color: <span>White</span></p> <br>
                             <h3>$145</h3>
+                            <div class="trash">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                            <div class="quantity">
+                                <button>-</button>
+                                <p> 1 </p>
+                                <button>+</button>
+                            </div>
                         </div>
                     </div>
                     <div class="product-list__two">
                         <img src="images/product-two.png" alt="">
                         <div class="product-item__info">
-                            <h4>CHECKERED SHIRT</h4> 
+                            <h3>Checkered Shirt</h3> 
                             <p>Size: <span>Medium</span></p> 
                             <p>Color: <span>Red</span></p> <br>
                             <h3>$180</h3>
+                            <div class="trash">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                            <div class="quantity">
+                                <button>-</button>
+                                <p> 1 </p>
+                                <button>+</button>
+                            </div>
                         </div>
                     </div>
                     <div class="product-list__three">
                         <img src="images/product-three.png" alt="">
                         <div class="product-item__info">
-                            <h4>SKINNY FIT JEANS</h4> 
+                            <h3>Skinny Fit Jeans</h3> 
                             <p>Size: <span>Large</span></p> 
                             <p>Color: <span>Blue</span></p> <br>
                             <h3>$240</h3>
+                            <div class="trash">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                            <div class="quantity">
+                                <button>-</button>
+                                <p> 1 </p>
+                                <button>+</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="product-oder col col-5">
-                    abc
+                    <h2>Order Summarys</h2>
+                    <div class="product-oder__list">
+                        <div class="subtotal">
+                            <p>Subtotal</p>
+                            <p class="subtotal-price">$565</p>
+                        </div>
+                        <div class="discount">
+                            <p>Discount (-20%)</p>
+                            <span>-$113</span>
+                        </div>
+                        <div class="delivery-fee">
+                            <p>Delivery Fee</p>
+                            <p class="subtotal-price">$15</p>
+                        </div>
+                        <div class="total">
+                            <p>Total</p>
+                            <p class="subtotal-price">$467</p>
+                        </div>
+                        <div class="discount-code">
+                            <i class="fa-solid fa-tag"></i>
+                            <input type="text" placeholder="Add promo code">
+                            <button class="btn-apply">
+                                Apply
+                            </button>
+                        </div>
+                            <button class="btn-Checkout">
+                                    Go to Checkout 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div><!-- content -->
+    <!---------------------------------------------------------------->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="need-help col col-2">
+                        <h2>Need Help</h2>
+                        <h4>Contact Us</h4>
+                        <h4>Track Order</h4>
+                        <h4>Returns & Refunds</h4>
+                        <h4>FAQ's</h4>
+                        <div class="footer-icon">
+                            <img src="images/facebook.jpg" alt="">
+                            <img src="images/instagam.jpg" alt="">
+                            <img src="images/in.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="company col col-2">
+                        <h2>Company</h2>
+                        <h4>About Us</h4>
+                        <h4>euphoria Blog</h4>
+                        <h4>euphoriastan</h4>
+                        <h4>Collaboration</h4>
+                        <h4>Media</h4>
+                    </div>
+                    <div class="more-info col col-3 ">
+                        <h2>More Info</h2>
+                        <h4>Term and Conditions</h4>
+                        <h4>Privacy Policy</h4>
+                        <h4>Shipping Policy</h4>
+                        <h4>Sitemap</h4>
+                    </div>
+                    <div class="location col col-5">
+                        <h2>Location</h2>
+                        <h4>support@euphoria.in</h4>
+                        <h4>Eklingpura Chouraha, Ahmedabad Main Road</h4>
+                        <h4>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</h4>
+                        <div class="location-bottom">
+                            <h1>Download The App</h1>
+                            <div class="footer-images">
+                                <img src="images/google-play.png" alt="">
+                                <img src="images/app-store.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+            
+        </div>
+    </footer>
 </body>
 </html>
