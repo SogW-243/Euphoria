@@ -368,6 +368,7 @@ ul, ol {
 }
 .product-base .product-info .product-rating {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 .product-base .product-info .product-rating .star {
