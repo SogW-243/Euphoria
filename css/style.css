@@ -481,7 +481,7 @@ ul, ol {
   height: 49px;
   background-color: #8A33FD;
   border-radius: 8px;
-  padding: 12px 40px;
+  padding: 5px 10px;
   cursor: pointer;
 }
 .product-base .product-info .btn-buy button:hover {
