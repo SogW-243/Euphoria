@@ -52,15 +52,21 @@
                 <input type="text" placeholder="Search">
             </div>
             <div class="icon">
-                <a href="#">
-                    <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-regular fa-user"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
+                <div class="icon-heart">
+                    <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                </div>
+                <div class="icon-user">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </div>
+                <div class="icon-shop">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
             </div>
     </header><!-- header -->
     <!---------------------------------------------------------------->
@@ -77,93 +83,99 @@
         </div><!-- header-content -->
         <div class="container">
             <div class="row">
-                <div class="product-list col col-7">
-                    <div class="product-list__one">
-                        <img src="images/product-one.png" alt="">
-                        <div class="product-item__info">
-                            <h3>Gradient Graphic T-shirt</h3> 
-                            <p>Size: <span>Large</span></p> 
-                            <p>Color: <span>White</span></p> <br>
-                            <h3>$145</h3>
-                            <div class="trash">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                            <div class="quantity">
-                                <button>-</button>
-                                <p> 1 </p>
-                                <button>+</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-list__two">
-                        <img src="images/product-two.png" alt="">
-                        <div class="product-item__info">
-                            <h3>Checkered Shirt</h3> 
-                            <p>Size: <span>Medium</span></p> 
-                            <p>Color: <span>Red</span></p> <br>
-                            <h3>$180</h3>
-                            <div class="trash">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                            <div class="quantity">
-                                <button>-</button>
-                                <p> 1 </p>
-                                <button>+</button>
+                <div class=" col col-7">
+                    <div class="product-list">
+                        <div class="product-list__one">
+                            <img src="images/product-one.png" alt="">
+                            <div class="product-item__info">
+                                <h3>Gradient Graphic T-shirt</h3> 
+                                <p>Size: <span>Large</span></p> 
+                                <p>Color: <span>White</span></p> <br>
+                                <h3>$145</h3>
+                                <div class="trash">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </div>
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <p> 1 </p>
+                                    <button>+</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-list__three">
-                        <img src="images/product-three.png" alt="">
-                        <div class="product-item__info">
-                            <h3>Skinny Fit Jeans</h3> 
-                            <p>Size: <span>Large</span></p> 
-                            <p>Color: <span>Blue</span></p> <br>
-                            <h3>$240</h3>
-                            <div class="trash">
-                                <i class="fa-solid fa-trash"></i>
+                        <div class="product-list__two">
+                            <img src="images/product-two.png" alt="">
+                            <div class="product-item__info">
+                                <h3>Checkered Shirt</h3> 
+                                <p>Size: <span>Medium</span></p> 
+                                <p>Color: <span>Red</span></p> <br>
+                                <h3>$180</h3>
+                                <div class="trash">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </div>
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <p> 1 </p>
+                                    <button>+</button>
+                                </div>
                             </div>
-                            <div class="quantity">
-                                <button>-</button>
-                                <p> 1 </p>
-                                <button>+</button>
+                        </div>
+                        <div class="product-list__three">
+                            <img src="images/product-three.png" alt="">
+                            <div class="product-item__info">
+                                <h3>Skinny Fit Jeans</h3> 
+                                <p>Size: <span>Large</span></p> 
+                                <p>Color: <span>Blue</span></p> <br>
+                                <h3>$240</h3>
+                                <div class="trash">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </div>
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <p> 1 </p>
+                                    <button>+</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="product-oder col col-5">
-                    <h2>Order Summarys</h2>
-                    <div class="product-oder__list">
-                        <div class="subtotal">
-                            <p>Subtotal</p>
-                            <p class="subtotal-price">$565</p>
-                        </div>
-                        <div class="discount">
-                            <p>Discount (-20%)</p>
-                            <span>-$113</span>
-                        </div>
-                        <div class="delivery-fee">
-                            <p>Delivery Fee</p>
-                            <p class="subtotal-price">$15</p>
-                        </div>
-                        <div class="total">
-                            <p>Total</p>
-                            <p class="subtotal-price">$467</p>
-                        </div>
-                        <div class="discount-code">
-                            <i class="fa-solid fa-tag"></i>
-                            <input type="text" placeholder="Add promo code">
-                            <button class="btn-apply">
-                                Apply
-                            </button>
-                        </div>
-                            <button class="btn-Checkout">
-                                    Go to Checkout 
-                                    <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <div class="oder-main">
+                        <div class="product-oder__list">
+                            <h2>Order Summarys</h2>
+                            <div class="oder-price">
+                                <div class="subtotal">
+                                    <p>Subtotal</p>
+                                    <p class="subtotal-price">$565</p>
+                                </div>
+                                <div class="discount">
+                                    <p>Discount (-20%)</p>
+                                    <span>-$113</span>
+                                </div>
+                                <div class="delivery-fee">
+                                    <p>Delivery Fee</p>
+                                    <p class="subtotal-price">$15</p>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <p>Total</p>
+                                <p class="subtotal-price">$467</p>
+                            </div>
+                            <div class="discount-code">
+                                <i class="fa-solid fa-tag"></i>
+                                <input type="text" placeholder="Add promo code">
+                                <button class="btn-apply">
+                                    Apply
+                                </button>
+                            </div>
+                                <button class="btn-Checkout">
+                                        Go to Checkout 
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                        </div><!-- product-oder__list -->
+                    </div><!-- oder-main -->
+                </div><!-- product-oder -->
+            </div><!-- row -->
+        </div><!-- container -->
     </div><!-- content -->
     <!---------------------------------------------------------------->
     <footer>

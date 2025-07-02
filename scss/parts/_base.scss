@@ -3,8 +3,7 @@ html{
 }
 
 body{
-    font-family: $fontFamily;
-    font-family: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
     line-height: 1.2;
     color: $textColor;
 }
@@ -20,7 +19,7 @@ h1 h2 h3 h4 h5 h6{
 }
 
 p{
-    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 ul,ol{

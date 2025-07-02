@@ -37,7 +37,7 @@ body{
                 font-size: 20px;
                 color: #FFFFFF;
                 position: absolute;
-                right: 7rem;
+                right: 8rem;
             }
         }
     }
@@ -50,8 +50,9 @@ body{
     justify-content: center;
     border-bottom: 1px solid #BEBCBD;
     height: 70px;
-    gap: 8rem;
+    gap: 66px   ;
     margin-bottom: 50px;
+    box-shadow: #807D7E 0px 0px 2px;
     .header-menu{
         display: flex;
         align-items: center;
@@ -81,6 +82,9 @@ body{
         align-items: center;
         justify-content: center;
         gap: 8px;
+        background: #F6F6F6;
+        padding: 10px 20px;
+        border-radius: 8px;
         i{
             width: 20px;
             height: 20px;
@@ -97,12 +101,16 @@ body{
             vertical-align: middle;
             color: #807D7E;
             border: none;
+            background: #F6F6F6;
         }
     }
     .icon{
         display: flex;
-        gap: 40px;
+        gap: 10px;
         a{
+            border-radius: 8px;
+            padding: 12px 16px;
+            background: #F6F6F6;
             i{
                 color: #807D7E;
             }
@@ -113,7 +121,7 @@ body{
 
 .content{
     margin: 0 auto;
-    width: 67%;
+    width: 1170px;
     .header-content{
         h3{
             margin-bottom: 30px;
@@ -138,12 +146,22 @@ body{
     }
     .container{
         .product-list{
+            border: 1px solid #0000001A;
+            border-radius: 20px;
+            padding: 20px;
             .product-list__one{
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                padding-bottom: 20px;
+
+                border-bottom: 1px solid #0000001A;
                 img{
-                    width: 125px;
-                    height: 187px;
+                    width: 124px;
+                    height: 124px;
+                    border-radius: 12px;
+                    
                 }
                 .product-item__info{
                     position: relative;
@@ -155,7 +173,7 @@ body{
                         color: #807D7E;
                     }
                     h3{
-                        font-size: 3vh
+                        font-size: 2vh;
                     }
                     .trash{
                         position: absolute;
@@ -171,6 +189,9 @@ body{
                         display: flex;
                         align-items: center;
                         gap: 20px;
+                        background: #F0F0F0;
+                        padding: 8px 24px;
+                        border-radius: 62px;
                         button{
                             border: none;
                             font-size: 24px;
@@ -181,84 +202,108 @@ body{
             }
             .product-list__two{
                 @extend .product-list__one;
+                padding-top: 20px
             }
             .product-list__three{
                 @extend .product-list__one;
+                border: none;
+                padding-top: 20px;
+                padding-bottom: 0px;
             }
         }
         .product-oder{
-            h2{
-                margin-top: 20px;
-                margin-bottom: 30px;
-            }
-            .product-oder__list{
-                display: flex;
-                flex-direction: column;
-                .subtotal{
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 20px;
-                    p{
-                        color: #00000099;
-                        font-size: 20px;
-                    }
-                    .subtotal-price{
-                        color:#000000;
-                        font-size: 20px;
-                        font-weight: 700;
-                    }
-                }
-                .discount{
-                    @extend .subtotal;
-                    span{
-                        color:#FF3333;
-                        font-weight: 700;
-                    }
-                }
-                .delivery-fee{
-                    @extend .subtotal;
-                }
-                .total{
-                    @extend .subtotal;
-                    margin-top: 30px;
-                    p{
-                        color:#000000;
-                    }
-                }
-                .discount-code{
-                    position: relative;
-                    margin-top: 10px;
+            .oder-main{
+                border: 1px solid #0000001A;
+                border-radius: 20px;
+                h2{
                     margin-bottom: 30px;
-                    i{
-                        bottom: 10px;
-                        position: absolute;
-                        color: #00000099;
-                        font-size: 20px;
-                        padding-left: 24px;
-                        font-size: 24px;
-                    }
-                    input{
-                        padding: 16px 65px ;
-                        border: none;
-                    }
-                    .btn-apply{
-                        @extend input;
-                        background: #000000;
-                        color: #FFFFFF;
-                        border-radius: 62px;
-                        cursor: pointer;
-                    }
                 }
-                .btn-Checkout{
+                .product-oder__list{
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 1px solid #0000001A;
+                    padding: 20px;
+                    border-bottom: none;
+                    .oder-price{
+                        border-bottom: 1px solid #0000001A;
+                        .subtotal{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 20px;
+                            p{
+                                color: #00000099;
+                                font-size: 20px;
+                            }
+                            .subtotal-price{
+                                color:#000000;
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+                        }
+                        .discount{
+                            @extend .subtotal;
+                            span{
+                                color:#FF3333;
+                                font-weight: 700;
+                            }
+                        }
+                        .delivery-fee{
+                            @extend .subtotal;
+                        }
+                    }
+                    .total{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
+                        p{
+                            font-size: 20px;
+                            font-weight: 400;
+                            color:#000000;
+                        }
+                        .subtotal-price{
+                            font-size: 24px;
+                            font-weight: 700;
+                            color:#000000;
+                        }
+                    }
+                    .discount-code{
+                        position: relative;
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                        i{
+                            bottom: 10px;
+                            position: absolute;
+                            color: #00000099;
+                            padding-left: 20px;
+                            font-size: 24px;
+                        }
+                        input{
+                            background-color: #F0F0F0;
+                            padding: 16px 54px ;
+                            border: none;
+                            border-radius: 62px;
+                            
+                        }
+                        .btn-apply{
+                            @extend input;
+                            background: #000000;
+                            color: #FFFFFF;
+                            border-radius: 62px;
+                            cursor: pointer;
+                        }
+                    }
+                    .btn-Checkout{
                         background: #000000;
                         color: #FFFFFF;
                         border-radius: 62px;
-                        padding: 20px 0px;
+                        padding: 16px 0px;
                         cursor: pointer;
                         i{
                             padding-left: 5px;
                             font-size: 16px;
                         }
+                    }
                 }
             }
         }      

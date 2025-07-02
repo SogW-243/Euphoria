@@ -39,7 +39,7 @@ body {
   font-size: 20px;
   color: #FFFFFF;
   position: absolute;
-  right: 7rem;
+  right: 8rem;
 }
 
 .header {
@@ -48,8 +48,9 @@ body {
   justify-content: center;
   border-bottom: 1px solid #BEBCBD;
   height: 70px;
-  gap: 8rem;
+  gap: 66px;
   margin-bottom: 50px;
+  box-shadow: #807D7E 0px 0px 2px;
 }
 .header .header-menu {
   display: flex;
@@ -78,6 +79,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  background: #F6F6F6;
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 .header .search i {
   width: 20px;
@@ -85,7 +89,7 @@ body {
   color: #807D7E;
   padding-right: 8px;
 }
-.header .search input, .header .search .content .container .product-oder .product-oder__list .discount-code .btn-apply, .content .container .product-oder .product-oder__list .discount-code .header .search .btn-apply {
+.header .search input, .header .search .content .container .product-oder .oder-main .product-oder__list .discount-code .btn-apply, .content .container .product-oder .oder-main .product-oder__list .discount-code .header .search .btn-apply {
   font-family: Nunito Sans;
   font-weight: 400;
   font-size: 16px;
@@ -94,10 +98,16 @@ body {
   vertical-align: middle;
   color: #807D7E;
   border: none;
+  background: #F6F6F6;
 }
 .header .icon {
   display: flex;
-  gap: 40px;
+  gap: 10px;
+}
+.header .icon a {
+  border-radius: 8px;
+  padding: 12px 16px;
+  background: #F6F6F6;
 }
 .header .icon a i {
   color: #807D7E;
@@ -105,7 +115,7 @@ body {
 
 .content {
   margin: 0 auto;
-  width: 67%;
+  width: 1170px;
 }
 .content .header-content h3 {
   margin-bottom: 30px;
@@ -126,13 +136,23 @@ body {
   font-size: 40px;
   margin-bottom: 20px;
 }
+.content .container .product-list {
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+  padding: 20px;
+}
 .content .container .product-list .product-list__one, .content .container .product-list .product-list__three, .content .container .product-list .product-list__two {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
 }
 .content .container .product-list .product-list__one img, .content .container .product-list .product-list__three img, .content .container .product-list .product-list__two img {
-  width: 125px;
-  height: 187px;
+  width: 124px;
+  height: 124px;
+  border-radius: 12px;
 }
 .content .container .product-list .product-list__one .product-item__info, .content .container .product-list .product-list__three .product-item__info, .content .container .product-list .product-list__two .product-item__info {
   position: relative;
@@ -145,7 +165,7 @@ body {
   color: #807D7E;
 }
 .content .container .product-list .product-list__one .product-item__info h3, .content .container .product-list .product-list__three .product-item__info h3, .content .container .product-list .product-list__two .product-item__info h3 {
-  font-size: 3vh;
+  font-size: 2vh;
 }
 .content .container .product-list .product-list__one .product-item__info .trash, .content .container .product-list .product-list__three .product-item__info .trash, .content .container .product-list .product-list__two .product-item__info .trash {
   position: absolute;
@@ -161,75 +181,106 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  background: #F0F0F0;
+  padding: 8px 24px;
+  border-radius: 62px;
 }
 .content .container .product-list .product-list__one .product-item__info .quantity button, .content .container .product-list .product-list__three .product-item__info .quantity button, .content .container .product-list .product-list__two .product-item__info .quantity button {
   border: none;
   font-size: 24px;
   cursor: pointer;
 }
-.content .container .product-oder h2 {
-  margin-top: 20px;
+.content .container .product-list .product-list__two {
+  padding-top: 20px;
+}
+.content .container .product-list .product-list__three {
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+.content .container .product-oder .oder-main {
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+}
+.content .container .product-oder .oder-main h2 {
   margin-bottom: 30px;
 }
-.content .container .product-oder .product-oder__list {
+.content .container .product-oder .oder-main .product-oder__list {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  padding: 20px;
+  border-bottom: none;
 }
-.content .container .product-oder .product-oder__list .subtotal, .content .container .product-oder .product-oder__list .total, .content .container .product-oder .product-oder__list .delivery-fee, .content .container .product-oder .product-oder__list .discount {
+.content .container .product-oder .oder-main .product-oder__list .oder-price {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.content .container .product-oder .oder-main .product-oder__list .oder-price .subtotal, .content .container .product-oder .oder-main .product-oder__list .oder-price .delivery-fee, .content .container .product-oder .oder-main .product-oder__list .oder-price .discount {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.content .container .product-oder .product-oder__list .subtotal p, .content .container .product-oder .product-oder__list .total p, .content .container .product-oder .product-oder__list .delivery-fee p, .content .container .product-oder .product-oder__list .discount p {
+.content .container .product-oder .oder-main .product-oder__list .oder-price .subtotal p, .content .container .product-oder .oder-main .product-oder__list .oder-price .delivery-fee p, .content .container .product-oder .oder-main .product-oder__list .oder-price .discount p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 20px;
 }
-.content .container .product-oder .product-oder__list .subtotal .subtotal-price, .content .container .product-oder .product-oder__list .total .subtotal-price, .content .container .product-oder .product-oder__list .delivery-fee .subtotal-price, .content .container .product-oder .product-oder__list .discount .subtotal-price {
+.content .container .product-oder .oder-main .product-oder__list .oder-price .subtotal .subtotal-price, .content .container .product-oder .oder-main .product-oder__list .oder-price .delivery-fee .subtotal-price, .content .container .product-oder .oder-main .product-oder__list .oder-price .discount .subtotal-price {
   color: #000000;
   font-size: 20px;
   font-weight: 700;
 }
-.content .container .product-oder .product-oder__list .discount span {
+.content .container .product-oder .oder-main .product-oder__list .oder-price .discount span {
   color: #FF3333;
   font-weight: 700;
 }
-.content .container .product-oder .product-oder__list .total {
-  margin-top: 30px;
+.content .container .product-oder .oder-main .product-oder__list .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-.content .container .product-oder .product-oder__list .total p {
+.content .container .product-oder .oder-main .product-oder__list .total p {
+  font-size: 20px;
+  font-weight: 400;
   color: #000000;
 }
-.content .container .product-oder .product-oder__list .discount-code {
+.content .container .product-oder .oder-main .product-oder__list .total .subtotal-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.content .container .product-oder .oder-main .product-oder__list .discount-code {
   position: relative;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-.content .container .product-oder .product-oder__list .discount-code i {
+.content .container .product-oder .oder-main .product-oder__list .discount-code i {
   bottom: 10px;
   position: absolute;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 20px;
-  padding-left: 24px;
+  padding-left: 20px;
   font-size: 24px;
 }
-.content .container .product-oder .product-oder__list .discount-code input, .content .container .product-oder .product-oder__list .discount-code .btn-apply {
-  padding: 16px 65px;
+.content .container .product-oder .oder-main .product-oder__list .discount-code input, .content .container .product-oder .oder-main .product-oder__list .discount-code .btn-apply {
+  background-color: #F0F0F0;
+  padding: 16px 54px;
   border: none;
+  border-radius: 62px;
 }
-.content .container .product-oder .product-oder__list .discount-code .btn-apply {
+.content .container .product-oder .oder-main .product-oder__list .discount-code .btn-apply {
   background: #000000;
   color: #FFFFFF;
   border-radius: 62px;
   cursor: pointer;
 }
-.content .container .product-oder .product-oder__list .btn-Checkout {
+.content .container .product-oder .oder-main .product-oder__list .btn-Checkout {
   background: #000000;
   color: #FFFFFF;
   border-radius: 62px;
-  padding: 20px 0px;
+  padding: 16px 0px;
   cursor: pointer;
 }
-.content .container .product-oder .product-oder__list .btn-Checkout i {
+.content .container .product-oder .oder-main .product-oder__list .btn-Checkout i {
   padding-left: 5px;
   font-size: 16px;
 }
