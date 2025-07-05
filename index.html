@@ -11,282 +11,332 @@
 </head>
 <body>
     <header class="header">
-            <div class="logo">
-                <a href="#">
-                    <img src="images/Logo.png" alt="">
-                </a>
+        <div class="container">
+            <div class="row">
+                    <div class="col col-sm-2 col-md-2 hidden-desktop">
+                        <div class="header__menu-toggle">
+                            <label for="toggle-menu">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+                        </div><!-- header__menu-toggle -->
+                    </div>
+                <div class="col col-2 col-sm-3 col-md-3">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/Logo.png" alt="">
+                        </a>
+                    </div><!-- logo -->
+                </div>
+                
+                    <div class=" col col-5 col-lg-6 header__menu-mobile">
+                        <input type="checkbox" id="toggle-menu">
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Men</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">Combos</a></li>
+                                <li><a href="#">Joggers</a></li>
+                            </ul>
+                        </nav> <!-- header-menu -->
+                    </div><!-- col -->
+                
+                    <div class="col col-3 col-sm-6 col-lg-4 col-md-6 hidden-search">
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="search-input" type="text" placeholder="Search">
+                        </div> <!-- search -->
+                    </div>
+                    <div class="col col-2 hidden-icon">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </div><!-- icon -->
+                    </div>
             </div>
-            <div class="header-menu">
-                <ul>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Combos</a></li>
-                    <li><a href="#">Joggers</a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <a href="#">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-                <input type="text" placeholder="Search">
-            </div>
-            <div class="icon">
-                <a href="#">
-                    <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-regular fa-user"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </div>
+        </div><!-- container -->
     </header><!-- header -->
     <!---------------------------------------------------------->
     <div class="product-base">
-        <div class="row">
-            <div class="product-gallery col col-6">
-                <div class="product-thumbnail-list">
-                    <img src="images/Ảnh trái nhỏ 1.png" alt="">
-                    <img class="active" src="images/Ảnh trái nhỏ 2.png" alt="">
-                    <img src="images/Ảnh trái nhỏ 3.png" alt="">
-                </div>
-                <div class="product-main__img">
-                    <img src="images/Ảnh to trái.png" alt="">
-                </div>
-            </div>
-            <div class="product-info col col-6">
-                <div class="info-main">
-                    <h4>Shop <i class="fa-solid fa-chevron-right"></i> Women <i class="fa-solid fa-chevron-right"></i> Top</h4>
-                    <h1>Raven Hoodie With Black colored Design</h1> 
-                    <div class="product-rating">
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>5.0</p>
-                        <i class="fa-regular fa-message"></i>
-                        <p>120 comment</p>
+        <div class="container">
+            <div class="row">
+                <div class="product-gallery col col-6 col-sm-12 col-md-12">
+                    <div class="product-thumbnail-list">
+                        <img src="images/Ảnh trái nhỏ 1.png" alt="">
+                        <img class="active" src="images/Ảnh trái nhỏ 2.png" alt="">
+                        <img src="images/Ảnh trái nhỏ 3.png" alt="">
                     </div>
-                    <h4 class="size-guide"><span>Select Size</span> Size Guide <i class="fa-solid fa-arrow-right"></i></h4>
-                    <div class="size">
-                        <a>XS</a>
-                        <a>S</a>
-                        <a>M</a>
-                        <a>L</a>
-                        <a>XL</a>
-                    </div><!-- size -->
-                    <h4>Colours Available</h4>
-                    <div class="color-main">
-                        <div class="color-black">
-                            <div class="son"></div>
-                        </div>
-                        <div class="color-yellow"></div>
-                        <div class="color-pink"></div>
-                        <div class="color-red"></div>
+                    <div class="product-main__img">
+                        <img src="images/Ảnh to trái.png" alt="">
                     </div>
-                    <div class="btn-buy">
-                        <button>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Add to cart</p>
-                        </button>
-                        <button class="product-price">
-                            $63.00
-                        </button>
-                    </div><!-- btn-buy -->
-                    <div class="service-feature">
-                        <div class="secure-payment">
-                            <div class="card">
-                                <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="product-info col col-6 col-sm-12 col-md-12">
+                    <div class="info-main">
+                        <h4>Shop <i class="fa-solid fa-chevron-right"></i> Women <i class="fa-solid fa-chevron-right"></i> Top</h4>
+                        <h1>Raven Hoodie With Black colored Design</h1> 
+                        <div class="product-rating">
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                             </div>
-                            Secure payment
+                            <p>5.0</p>
+                            <i class="fa-regular fa-message"></i>
+                            <p>120 comment</p>
                         </div>
-                        <div class="size-fit">
-                            <div class="shirt">
-                                <i class="fa-solid fa-shirt"></i>
+                        <h4 class="size-guide"><span>Select Size</span> Size Guide <i class="fa-solid fa-arrow-right"></i></h4>
+                        <div class="size">
+                            <a>XS</a>
+                            <a>S</a>
+                            <a>M</a>
+                            <a>L</a>
+                            <a>XL</a>
+                        </div><!-- size -->
+                        <h4>Colours Available</h4>
+                        <div class="color-main">
+                            <div class="color-black">
+                                <div class="son"></div>
                             </div>
-                            Size & Fit
+                            <div class="color-yellow"></div>
+                            <div class="color-pink"></div>
+                            <div class="color-red"></div>
                         </div>
-                        <div class="free-shipping">
-                            <div class="truck">
-                                <i class="fa-solid fa-truck"></i>
+                        <div class="btn-buy">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Add to cart</p>
+                            </button>
+                            <button class="product-price">
+                                $63.00
+                            </button>
+                        </div><!-- btn-buy -->
+                        <div class="service-feature">
+                            <div class="secure-payment">
+                                <div class="card">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </div>
+                                Secure payment
                             </div>
-                            <p>Free shipping</p>
-                        </div>
-                        <div class="free-return">
-                            <div class="right-left">
-                                <i class="fa-solid fa-right-left"></i>
+                            <div class="size-fit">
+                                <div class="shirt">
+                                    <i class="fa-solid fa-shirt"></i>
+                                </div>
+                                Size & Fit
                             </div>
-                            Free Shipping & Returns
-                        </div>
-                    </div><!-- service-feature -->
-                </div> <!-- info-main -->
-            </div><!-- product-info -->
-        </div><!-- row -->
+                            <div class="free-shipping">
+                                <div class="truck">
+                                    <i class="fa-solid fa-truck"></i>
+                                </div>
+                                <p>Free shipping</p>
+                            </div>
+                            <div class="free-return">
+                                <div class="right-left">
+                                    <i class="fa-solid fa-right-left"></i>
+                                </div>
+                                Free Shipping & Returns
+                            </div>
+                        </div><!-- service-feature -->
+                    </div> <!-- info-main -->
+                </div><!-- product-info -->
+            </div><!-- row -->
+        </div><!-- container -->
     </div><!-- product-base -->
     <!---------------------------------------------------------->
     <div class="product-description">
-        <div class="title">
-            <div></div>
-            <h2>Product Description</h2>
-        </div>
-        <div class="row">
-            <div class="product-left col col-6">
-                <div class="product-title__left">
-                    <div class="left-title">
-                        <h4 class="bold">Description</h4>
-                        <h4>User comments <span class="badge-purple">21</span></h4>
-                        <h4>Question & Answer <span class="badge-black">4</span></h4>
-                        <div></div>
-                    </div>
-                    <p>100% Bio-washed Cotton – makes the fabric extra soft & silky. Flexible ribbed crew neck. Precisely stitched with no pilling & no fading. Provide all-time comfort. Anytime, anywhere. Infinite range of matte-finish HD prints.</p>
-                    <div class="spec-table">
-                        <div class="spec-row">
-                            <div class="spec-cell"><span>Fabric</span> <br><strong>Bio-washed Cotton</strong></div>
-                            <div class="spec-cell"><span>Pattern</span><br> <strong>Printed</strong></div>
-                            <div class="spec-cell"><span>Fit</span><br> <strong>Regular-fit</strong></div>
+        <div class="container">
+            <div class="title">
+                <div></div>
+                <h2>Product Description</h2>
+            </div>
+            <div class="row">
+                <div class="product-left col col-6 col-sm-12 col-md-12">
+                    <div class="product-title__left">
+                        <div class="left-title">
+                            <h4 class="bold">Description</h4>
+                            <h4>User comments <span class="badge-purple">21</span></h4>
+                            <h4>Question & Answer <span class="badge-black">4</span></h4>
+                            <div></div>
                         </div>
-                        <div class="spec-row">
-                            <div class="spec-cell-float"><span>Neck</span><br> <strong>Round Neck</strong></div>
-                            <div class="spec-cell-float"><span>Sleeve</span><br> <strong>Half-sleeves</strong></div>
-                            <div class="spec-cell-float"><span>Style</span><br> <strong>Casual Wear</strong></div>
-                        </div><!-- spec-row -->
-                    </div><!-- spec-table -->
-                </div><!-- product-title__left -->
-            </div><!-- product-left -->
-            <div class="product-right col col-6">
-               <a href="#">
-                    <img src="images/Frame 47.png" alt="">
-               </a> 
+                        <p>100% Bio-washed Cotton – makes the fabric extra soft & silky. Flexible ribbed crew neck. Precisely stitched with no pilling & no fading. Provide all-time comfort. Anytime, anywhere. Infinite range of matte-finish HD prints.</p>
+                        <div class="spec-table">
+                            <div class="spec-row">
+                                <div class="spec-cell"><span>Fabric</span> <br><strong>Bio-washed Cotton</strong></div>
+                                <div class="spec-cell"><span>Pattern</span><br> <strong>Printed</strong></div>
+                                <div class="spec-cell"><span>Fit</span><br> <strong>Regular-fit</strong></div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-cell-float"><span>Neck</span><br> <strong>Round Neck</strong></div>
+                                <div class="spec-cell-float"><span>Sleeve</span><br> <strong>Half-sleeves</strong></div>
+                                <div class="spec-cell-float"><span>Style</span><br> <strong>Casual Wear</strong></div>
+                            </div><!-- spec-row -->
+                        </div><!-- spec-table -->
+                    </div><!-- product-title__left -->
+                </div><!-- product-left -->
+                <div class="product-right col col-6 col-sm-12 col-md-12">
+                   <a href="#">
+                        <img src="images/Frame 47.png" alt="">
+                   </a> 
+                </div>
             </div>
         </div>
     </div><!-- product-description -->
     <!---------------------------------------------------------->
     <div class="similar-products">
-        <div class="title">
-            <div></div>
-            <h2>Similar Products</h2>
-        </div>
-        <div class="products-sections">
-            <div class="sections-1">
-                <div class="row">
-                    <div class="img-sections col col-3">
-                        <div class="img-main">
-                            <img src="images/similar 1.jpg" alt="">
-                        </div>
-                        <div class="section-main">
-                            <div class="img-contents">
-                                <p class="product-name">White T-Shirt</p>
-                                <p>Priya's Brand</p>
+        <div class="container">
+            <div class="title">
+                <div></div>
+                <h2>Similar Products</h2>
+            </div>
+            <div class="products-sections">
+                <div class="sections-1">
+                    <div class="row">
+                        <div class="img-sections col col-3 col-sm-12 col-md-6">
+                            <div class="img-main">
+                                <div class="img-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <img src="images/similar 1.jpg" alt="">
                             </div>
-                            <div class="product-buy">
-                                $13.00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-sections col col-3">
-                        <div class="img-main">
-                            <img src="images/similar 2.jpg" alt="">
-                        </div>
-                        <div class="section-main">
-                            <div class="img-contents">
-                                <p class="product-name">Dark Green Sweatshirt...</p> 
-                                <p>Roboto's Brand</p>
-                            </div>
-                            <div class="product-buy">
-                                $127.00
+                            <div class="section-main">
+                                <div class="img-contents">
+                                    <p class="product-name">White T-Shirt</p>
+                                    <p>Priya's Brand</p>
+                                </div>
+                                <div class="product-buy">
+                                    $13.00
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="img-sections col col-3">
-                        <div class="img-main">
-                            <img src="images/similar 3.jpg" alt="">
-                        </div>
-                        <div class="section-main">
-                            <div class="img-contents">
-                                <p class="product-name">Levender Sweatshirt...</p> 
-                                <p>Jhanvi's Brand</p>
+                        <div class="img-sections col col-3 col-sm-12 col-md-6">
+                            <div class="img-main">
+                                <div class="img-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <img src="images/similar 2.jpg" alt="">
                             </div>
-                            <div class="product-buy">
-                                $133.00
+                            <div class="section-main">
+                                <div class="img-contents">
+                                    <p class="product-name">Dark Green Sweatshirt...</p> 
+                                    <p>Roboto's Brand</p>
+                                </div>
+                                <div class="product-buy">
+                                    $127.00
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="img-sections col col-3">
-                        <div class="img-main">
-                            <img src="images/similar 4.jpg" alt="">
-                        </div>
-                        <div class="section-main">
-                            <div class="img-contents">
-                                <p class="product-name">Urban jacket with white...</p> 
-                                <p>Sagar's Brand</p>
+                        <div class="img-sections col col-3 col-sm-12 col-md-6">
+                            <div class="img-main">
+                                <div class="img-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <img src="images/similar 3.jpg" alt="">
                             </div>
-                            <div class="product-buy">
-                                $79.00
+                            <div class="section-main">
+                                <div class="img-contents">
+                                    <p class="product-name">Levender Sweatshirt...</p> 
+                                    <p>Jhanvi's Brand</p>
+                                </div>
+                                <div class="product-buy">
+                                    $133.00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-sections col col-3 col-sm-12 col-md-6">
+                            <div class="img-main">
+                                <div class="img-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <img src="images/similar 4.jpg" alt="">
+                            </div>
+                            <div class="section-main">
+                                <div class="img-contents">
+                                    <p class="product-name">Urban jacket with white...</p> 
+                                    <p>Sagar's Brand</p>
+                                </div>
+                                <div class="product-buy">
+                                    $79.00
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="sections-2">
-                <div class="row">
-                    <div class="img-sections col col-3">
-                        <div class="img-main">
-                            <img src="images/similar 5.jpg" alt="">
-                        </div>
-                        <div class="section-main">
-                            <div class="img-contents">
-                                <p class="product-name">Plain White T-Shirt</p> 
-                                <p>Jhanvi's Brand</p>
+                <div class="sections-2">
+                    <div class="row">
+                        <div class="img-sections col col-3 col-sm-12 col-md-6">
+                            <div class="img-main">
+                                <div class="img-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <img src="images/similar 5.jpg" alt="">
                             </div>
-                            <div class="product-buy">
-                                $123.00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-sections col col-3">
-                        <div class="img-main">
-                            <img src="images/similar 6.jpg" alt="">
-                        </div>
-                        <div class="section-main">
-                            <div class="img-contents">
-                                <p class="product-name">Checks Shirt with white...</p> 
-                                <p>H.M's Brand</p>
-                            </div>
-                            <div class="product-buy">
-                                $123.00
+                            <div class="section-main">
+                                <div class="img-contents">
+                                    <p class="product-name">Plain White T-Shirt</p> 
+                                    <p>Jhanvi's Brand</p>
+                                </div>
+                                <div class="product-buy">
+                                    $123.00
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="img-sections col col-3">
-                        <div class="img-main">
-                            <img src="images/similar 7.jpg" alt="">
-                        </div>
-                        <div class="section-main">
-                            <div class="img-contents">
-                                <p class="product-name">One piece black top & ...</p> 
-                                <p>Nike's Brand</p>
+                        <div class="img-sections col col-3 col-sm-12 col-md-6">
+                            <div class="img-main">
+                                <div class="img-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <img src="images/similar 6.jpg" alt="">
                             </div>
-                            <div class="product-buy">
-                                $123.00
+                            <div class="section-main">
+                                <div class="img-contents">
+                                    <p class="product-name">Checks Shirt with white...</p> 
+                                    <p>H.M's Brand</p>
+                                </div>
+                                <div class="product-buy">
+                                    $123.00
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="img-sections col col-3">
-                        <div class="img-main">
-                            <img src="images/similar 8.jpg" alt="">
-                        </div>
-                        <div class="section-main">
-                            <div class="img-contents">
-                                <p class="product-name">Denim Blue Shirt</p> 
-                                <p>MOMO's Brand</p>
+                        <div class="img-sections col col-3 col-sm-12 col-md-6">
+                            <div class="img-main">
+                                <div class="img-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <img src="images/similar 7.jpg" alt="">
                             </div>
-                            <div class="product-buy">
-                                $38.00
+                            <div class="section-main">
+                                <div class="img-contents">
+                                    <p class="product-name">One piece black top & ...</p> 
+                                    <p>Nike's Brand</p>
+                                </div>
+                                <div class="product-buy">
+                                    $123.00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-sections col col-3 col-sm-12 col-md-6">
+                            <div class="img-main">
+                                <div class="img-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <img src="images/similar 8.jpg" alt="">
+                            </div>
+                            <div class="section-main">
+                                <div class="img-contents">
+                                    <p class="product-name">Denim Blue Shirt</p> 
+                                    <p>MOMO's Brand</p>
+                                </div>
+                                <div class="product-buy">
+                                    $38.00
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -302,7 +352,7 @@
         <div class="container">
             <div class="footer-main">
                 <div class="row">
-                    <div class="need-help col col-2">
+                    <div class="need-help col col-2 col-sm-4 col-md-4">
                         <h2>Need Help</h2>
                         <h4>Contact Us</h4>
                         <h4>Track Order</h4>
@@ -314,7 +364,7 @@
                             <img src="images/in.jpg" alt="">
                         </div>
                     </div>
-                    <div class="company col col-2">
+                    <div class="company col col-2 col-sm-4 col-md-4">
                         <h2>Company</h2>
                         <h4>About Us</h4>
                         <h4>euphoria Blog</h4>
@@ -322,14 +372,14 @@
                         <h4>Collaboration</h4>
                         <h4>Media</h4>
                     </div>
-                    <div class="more-info col col-3 ">
+                    <div class="more-info col col-3 col-sm-4 col-md-4">
                         <h2>More Info</h2>
                         <h4>Term and Conditions</h4>
                         <h4>Privacy Policy</h4>
                         <h4>Shipping Policy</h4>
                         <h4>Sitemap</h4>
                     </div>
-                    <div class="location col col-5">
+                    <div class="location col col-5 col-sm-12 col-md-12">
                         <h2>Location</h2>
                         <h4>support@euphoria.in</h4>
                         <h4>Eklingpura Chouraha, Ahmedabad Main Road</h4>
@@ -344,11 +394,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
-            
-        </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+                
+            </div>
+        </div><!-- container -->
     </footer>
 </body>
 </html>
