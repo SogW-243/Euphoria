@@ -3,25 +3,35 @@
     height: 1080px;
     margin: 0 auto;
     margin-top: 80px;
-    @media (max-width: 992px) {
-        height: 992px;
+    @media (min-width: 344px) {
+        height: 106rem;
     }
-    @media (max-width: 853px) {
-        margin-top: 200px;
-        margin-bottom: 1px;
+    @media (min-width: 360px) {
+        height: 109rem;
     }
-    @media (min-width: 578px) and (max-width: 768px) {
-        width: 90%;
-        margin-top: 20px;
-        height: 2133px;
+    @media (min-width: 375px) {
+        height: 111rem;
     }
-    @media (max-width: 576px) {
-        width: 90%;
-        margin-top: 20px;
-        height: 1870px;
+    @media (min-width: 390px) {
+        height: 113rem;
     }
-    @media (max-width: 390px) {
-        height: 1750px;
+    @media (min-width: 414px) {
+        height: 120rem;
+    }
+    @media (min-width: 412px) {
+        height: 117rem;
+    }
+    @media (min-width: 430px) {
+        height: 121rem;
+    }
+    @media (min-width: 767px) {
+        height: 147rem;
+    }
+    @media (min-width: 992px) {
+        height: 63rem;
+    }
+    @media (min-width: 1200px) {
+        height: 68rem;
     }
     .container{
         @media (max-width: 853px) {

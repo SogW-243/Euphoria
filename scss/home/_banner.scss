@@ -2,14 +2,29 @@
     width: 100%;
     height: 724px;
     margin: 0 auto;
-    @media(min-width: 578px) and (max-width: 768px){
-        height: 1483px;
+    @media (min-width: 344px){
+        height: 83rem;
     }
-    @media(max-width: 576px){
-        height: 1450px;
+    @media (min-width: 375px){
+        height: 81rem;
     }
-    @media (max-width: 430px){
-        height: 1243px;
+    @media (min-width: 390px){
+        height: 84rem;
+    }
+    @media (min-width: 414px){
+        height: 88rem;
+    }
+    @media (min-width: 500px){
+        height: 93rem;
+    }
+    @media (min-width: 576px){
+        height: 100rem;
+    }
+    @media (min-width: 768px){
+        height: 91rem;
+    }
+    @media (min-width: 992px){
+        height: 48rem;
     }
     .container{
         .product-gallery{
@@ -80,11 +95,20 @@
                 .star{
                     color: #EDD146;
                     cursor: pointer;
+                    @media (min-width: 344px) {
+                        width: 50%;
+                    }
+                    @media (min-width: 375px) {
+                        width: 35%;
+                    }
                 }
                 p{
                     font-weight: 600;
                     font-size: 18px;
                     cursor: pointer;
+                    @media (min-width: 375px) {
+                        font-size: 17px;
+                    }
                 }
             }
             .size-guide{
@@ -230,6 +254,13 @@
                 grid-template-rows: 1fr 1fr;    // 2 hàng bằng nhau
                 gap: 30px;
                 margin-top: 40px;
+                @media (min-width: 344px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                @media (min-width: 768px) {
+                    display: grid;
+                }
                 .secure-payment{
                     display: flex;
                     gap: 20px;
@@ -238,6 +269,9 @@
                     font-weight: 600;
                     font-size: 18px;
                     cursor: pointer;
+                    @media (min-width: 344px) {
+                        gap: 20px;
+                    }
                     .card{
                         display: flex;
                         justify-content: center;
@@ -245,10 +279,10 @@
                         height: 44px;
                         border-radius: 50%;
                         background-color: #F6F6F6;
-                        &:hover{
-                        transform: scale(1.05);
-                        transition: all 0.3s ease-in-out;
-                    }
+                            &:hover{
+                            transform: scale(1.05);
+                            transition: all 0.3s ease-in-out;
+                            }
                         i{
                             display: flex;
                             align-items: center;

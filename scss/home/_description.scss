@@ -4,13 +4,18 @@
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 80px;
-    @media (max-width: 576px) {
-        width: 90%;
-        height: 888px;
-    }
     @media (min-width: 578px) and (max-width: 768px) {
         width: 90%;
         height: 800px;
+    }
+    @media (min-width: 344px) {
+        height: 73rem;
+    }
+    @media (min-width: 576px) {
+        height: 56rem;
+    }
+    @media (min-width: 992px) {
+        height: 33rem;
     }
     .title{
         position: relative;
@@ -42,8 +47,8 @@
                 display: flex;
                 gap: 30px;
                 margin-bottom: 30px;
-                @media (max-width: 992px) {
-                    gap: 17px;
+                @media (min-width: 344px) {
+                    gap: 25px;
                 }
                 div{
                     position: absolute;
@@ -57,6 +62,9 @@
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 100%;
+                    @media (min-width: 344px) {
+                        padding-top: 20px;
+                    }
                 }
                 h4{
                     display: flex; 
@@ -75,6 +83,9 @@
                         border-radius: 4px;
                         background: #8A33FD;
                         color: #FFFFFF;
+                        @media (min-width: 344px) {
+                            display: none;
+                        }
                         @media (max-width: 576px) {
                             margin-top: 7px;
                             margin-bottom: 7px;
@@ -88,6 +99,9 @@
                         @extend .badge-purple;
                         background: #3C4242;
                         padding: 5px 8px;
+                        @media (min-width: 344px) {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -101,8 +115,17 @@
                 border-radius: 12px;
                 overflow: hidden;
                 margin-top: 30px;
+                @media (min-width: 344px) {
+                    display: flex;
+                    flex-direction: column;
+                    // border: 1px solid #BEBCBD;
+                }
+                @media (min-width: 576px) {
+                    display: grid;
+                }
                 .spec-row{
                     display: contents;
+                    
                     .spec-cell{
                         padding: 24px 16px;
                         border-right: 1px solid #BEBCBD;
@@ -124,11 +147,30 @@
                             font-weight: 600;
                             color: #3C4242;
                         }
+                        @media (min-width: 344px) {
+                            border-right: none;
+                            &:nth-last-child(-n+3){
+                                // border-bottom: none;
+                            }
+                            // border-top: 1px solid #BEBCBD;
+                            &:nth-child(1){
+                                border-top: none;
+                            }
+                        }
+                        @media (min-width: 576px) {
+                            border-right: 1px solid #BEBCBD;
+                        }
                     }
                     .spec-cell-float{
                         @extend .spec-cell;
                         &:nth-last-child(-n+3){
                             border-bottom: none;
+                        }
+                        @media (min-width: 344px) {
+                           border-top: 1px solid #BEBCBD;
+                        }
+                        @media (min-width: 576px) {
+                            border-top: none;
                         }
                     }
                 }
