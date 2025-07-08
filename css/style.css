@@ -1342,4 +1342,14 @@ footer .footer-bottom {
   footer .footer-bottom {
     font-size: 11px;
   }
+}
+@media (min-width: 576px) {
+  footer .footer-bottom {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-bottom {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
