@@ -272,6 +272,12 @@
                     @media (min-width: 344px) {
                         gap: 20px;
                     }
+                    @media (min-width: 992px) {
+                        font-size: 11px;
+                    }
+                    @media (min-width: 1200px) {
+                        font-size: 14px;
+                    }
                     .card{
                         display: flex;
                         justify-content: center;
@@ -286,6 +292,7 @@
                         i{
                             display: flex;
                             align-items: center;
+                            font-size: 14px;
                         }
                     }
                 }
