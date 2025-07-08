@@ -1175,7 +1175,7 @@ footer .container {
 }
 @media (min-width: 992px) {
   footer .container {
-    height: 34rem;
+    height: 30rem;
   }
 }
 @media (min-width: 1200px) {
