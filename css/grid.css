@@ -34,7 +34,7 @@
   padding-bottom: calc(2 * var(--column-space-small));
 }
 
-.row .row-small > .col { /* Giảm khoảng cách giữa các cột */
+.row-small > .col { /* Giảm khoảng cách giữa các cột */
   padding: 0 var(--column-space-small);
 }
 
@@ -48,7 +48,7 @@
   margin-right: calc(0px - var(--column-space-small));
 }
 
-.row .row-collapse { /* Loại bỏ hoàn toàn khoảng cách*/
+.row-collapse { /* Loại bỏ hoàn toàn khoảng cách*/
   margin-left: 0;
   margin-right: 0;
 }

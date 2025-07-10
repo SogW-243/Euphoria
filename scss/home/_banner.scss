@@ -3,33 +3,49 @@
     height: 724px;
     margin: 0 auto;
     @media (min-width: 344px){
-        height: 83rem;
+        height: 94rem;
     }
     @media (min-width: 375px){
-        height: 81rem;
+        height: 96rem;
     }
     @media (min-width: 390px){
-        height: 84rem;
+        height: 98rem;
     }
     @media (min-width: 414px){
-        height: 88rem;
+        height: 99rem;
+    }
+    @media (min-width: 465px){
+        height: 104rem;
     }
     @media (min-width: 500px){
-        height: 93rem;
+        height: 108rem;
+    }
+    @media (min-width: 540px){
+        height: 94rem;
     }
     @media (min-width: 576px){
-        height: 100rem;
+        height: 103rem;
     }
     @media (min-width: 768px){
-        height: 91rem;
+        height: 93rem;
     }
     @media (min-width: 992px){
+        height: 92rem;
+    }
+    @media (min-width: 993px){
         height: 48rem;
     }
     .container{
         .product-gallery{
             display: flex;
             justify-content: center;
+            @media (min-width: 344px){
+                flex-direction: column-reverse;
+                gap: 24px;
+            }
+            @media (min-width: 540px){
+                flex-direction: row;
+            }
             .product-thumbnail-list{
                 display: flex;
                 flex-direction: column;
@@ -37,6 +53,13 @@
                 padding-right: 30px;
                 gap: 24px;
                 cursor: pointer;
+                @media (min-width: 344px){
+                    flex-direction: row;
+                    padding-right: 0px;
+                }
+                @media (min-width: 540px){
+                    flex-direction: column;
+                }
                 img{
                     border-radius: 9px;
                     &:hover{
@@ -54,6 +77,7 @@
                 height: 785px;
                 @media (max-width: 576px){
                     height: 100%;
+                    width: 100%;
                 }
                 img{
                     object-fit: cover;
@@ -87,6 +111,9 @@
                 margin-bottom: 30px;
                 font-size: 34px;
                 font-weight: 800;
+                @media (min-width: 769px){
+                    font-size: 24px;
+                }
             }
             .product-rating{
                 display: flex;
@@ -100,6 +127,9 @@
                     }
                     @media (min-width: 375px) {
                         width: 35%;
+                    }
+                    @media (min-width: 769px) {
+                        width: 44%;
                     }
                 }
                 p{

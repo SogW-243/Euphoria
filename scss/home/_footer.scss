@@ -11,8 +11,11 @@ footer{
         height: 50rem;
     }        
     @media (min-width: 992px) {
-        height: 34rem;
+        height: 31rem;
     }       
+    @media (min-width: 993px) {
+        height: 35rem;
+    }
     .container{
         @media (max-width: 768px) {
             height: 850px;
@@ -20,11 +23,17 @@ footer{
         @media (min-width: 344px) {
             height: 50rem;
         }
+        @media (min-width: 769px) {
+            height: 46rem;
+        }
         @media (min-width: 992px) {
-            height: 30rem;
+            height: 31rem;
+        }
+        @media (min-width: 993px) {
+            height: 31rem;
         }
         @media (min-width: 1200px) {
-            height: 30rem;
+            height: 31rem;
         }
         height: 480px;
         border-bottom: 1px solid #BEBCBD;
@@ -41,7 +50,10 @@ footer{
                 height: 44rem;
             }
             @media (min-width: 992px) {
-                height: 28rem;
+                height: 29rem;
+            }
+            @media (min-width: 993px) {
+                height: 29rem;
             }
             .need-help{
                 display: flex;
