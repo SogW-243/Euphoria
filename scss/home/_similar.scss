@@ -163,12 +163,16 @@
                         }
                         .img-icon{
                             position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             right: 20px;
                             top: 20px;
                             background-color: #e7eeee;
                             padding: 8px;
                             border-radius: 50%;
                             cursor: pointer;
+                            flex-shrink: 0;
                             &:hover{
                                 transform: scale(1.05);
                                 transition: all 0.3s ease-in-out;

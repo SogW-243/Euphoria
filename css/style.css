@@ -304,6 +304,16 @@ ul, ol {
   list-style: none;
   gap: 30px;
 }
+@media (min-width: 344px) {
+  .header .container .row .header-menu ul {
+    gap: 12px;
+  }
+}
+@media (min-width: 1400px) {
+  .header .container .row .header-menu ul {
+    gap: 30px;
+  }
+}
 @media (max-width: 900px) {
   .header .container .row .header-menu ul {
     flex-direction: column;
@@ -1251,12 +1261,16 @@ ul, ol {
 }
 .similar-products .container .products-sections .sections-1 .img-sections .img-main .img-icon, .similar-products .container .products-sections .sections-2 .img-sections .img-main .img-icon {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: 20px;
   top: 20px;
   background-color: #e7eeee;
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .similar-products .container .products-sections .sections-1 .img-sections .img-main .img-icon:hover, .similar-products .container .products-sections .sections-2 .img-sections .img-main .img-icon:hover {
   transform: scale(1.05);

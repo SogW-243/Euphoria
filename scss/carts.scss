@@ -102,7 +102,7 @@ body{
                     padding-top: 10px;
                     @media(max-width: 900px){
                         position: absolute;
-                        top: 90px;
+                        top: 15%;
                         left: -100%;
                         right: auto;
                         z-index: 20;
@@ -115,6 +115,12 @@ body{
                         display: flex;
                         list-style: none;
                         gap: 30px;
+                        @media (min-width: 344px) {
+                            gap: 12px;
+                        }
+                        @media (min-width: 1400px) {
+                            gap: 30px;
+                        }
                         @media (max-width: 900px) {
                             flex-direction: column;
                         }
@@ -612,6 +618,10 @@ footer{
                             &:hover{
                                 transform: scale(1.05);
                                 transition: all 0.3s ease-in-out;
+                            }
+                            @media (min-width: 344px) {
+                                width: 134px;
+                                height: 51px;
                             }
                         }
                     }
